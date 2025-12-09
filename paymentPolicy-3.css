@@ -1,0 +1,273 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    padding: 2rem;
+}
+
+.hero-nav {
+    width: 40%;
+    margin-bottom: 2%;
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.nav-link div {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'poppins', 'sans-serif';
+}
+
+.arrow-icon {
+    font-size: 12px;
+}
+
+/* search bar and logo */
+
+.search {
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+@media screen {
+    .search {
+        max-width: 1200px;
+    }
+    
+}
+.logo {
+    font-family: inherit;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    letter-spacing: 0%;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    /* gap: 18px; */
+    width: 70%;
+
+}
+
+.search-bar--form {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    height: 52px;
+    /* flex: 1; */
+    justify-content: flex-start;
+
+}
+
+.input-with-icon {
+    background-color: red;
+    /* flex: 1; */
+    height: 100%;
+    display: flex;
+    /* gap: 16px; */
+    align-items: center;
+    justify-content: start;
+
+}
+
+.search-icon {}
+
+.search-bar--input {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    display: flex;
+    flex: 1;
+}
+
+.search-btn {
+    background: #3B7A3A;
+    color: #fff;
+    border: 2px;
+    padding: 10px 64px;
+    height: 52px;
+    border-radius: 2px;
+}
+
+
+.search-btn:hover {
+    background-color: #2e5d2e;
+    transition: 0.3s;
+}
+
+/* body layout */
+
+.layout {
+    font-family: 'poppins', sans-serif;
+}
+
+.cucumber-text {
+    display: grid;
+}
+
+.cucumber-text2 {
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.cucumber-text1 {
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+
+.add-button {
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    color: #fff;
+    background: #3B7A3A;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.add-button:hover {
+    background-color: #2e5d2e;
+    transition: 0.3s;
+}
+
+.cucumber-div {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+
+}
+
+.buy-text {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.products-list {
+    background-color: red;
+    padding: 10px 5px;
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+/* .cucumber-image {
+
+    max-width: 327px;
+
+    img {
+        width: 100%;
+    }
+} */
+
+.product-tomatoes {
+    background-color: #FFFFFF;
+    padding: 20px;
+    line-height: normal;
+    border-radius: 5px;
+}
+
+.tomatoes-text-1 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.tomatoes-text-2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    line-height: normal;
+    padding-top: 10px;
+
+}
+
+.tomatoes-btn {
+    display: flex;
+    justify-content: flex-end;
+    /* padding-left: 40% ; */
+}
+
+.tomatoes-buy {
+    color: #fff;
+    background: #3B7A3A;
+    width: 30%;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.tomatoes-buy:hover {
+    background-color: #2e5d2e;
+    transition: 0.3s;
+}
+
+.delivery {
+    background-color: #FFFFFF;
+    padding: 30px;
+    line-height: normal;
+    border-radius: 5px;
+}
+
+.delivery-text-1 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 10px;
+
+}
+
+.delivery-text-3 {
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 10px;
+}
+
+.policy {
+    display: none;
+}
