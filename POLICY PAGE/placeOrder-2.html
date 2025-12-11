@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order 2</title>
+    <link rel="stylesheet" href="/POLICY PAGE/placeOrder-3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+</head>
+
+<body>
+    <section>
+        <!-- Nav bar -->
+        <nav class="hero-nav">
+            <ul class="nav-link">
+                <div>
+                    <li><a href="/LANDING PAGE/index.html">Home</a></li>
+                    <img src="/ASSETS/arrow.svg" alt="arrow" class="arrow-icon">
+                </div>
+                <div>
+                    <li><a href="#">Products</a></li>
+                    <img src="/ASSETS/arrow.svg" alt="arrow" class="arrow-icon">
+                </div>
+                <div>
+                    <li><a href="#">Place Order</a></li>
+                    <img src="/ASSETS/arrow.svg" alt="arrow" class="arrow-icon">
+                </div>
+            </ul>
+        </nav>
+
+        <!-- Search bar and logo -->
+
+        <div class="search">
+            <div class="logo">
+                <img src="/ASSETS/logo.png" alt="logo">
+            </div>
+
+            <div class="search-container">
+                <img src="/ASSETS/search.svg" alt="search icon" class="search-icon">
+                <input type="Search" placeholder="Search Products">
+            </div>
+            <button class="search-btn">Search</button>
+        </div>
+    </section>
+
+    <!-- Body Layout -->
+    <section class="layout">
+
+        <div class="products-list">
+            <div class="product-cucumber">
+                <div class="cucumber-div">
+                    <div class="cucumber-image">
+                        <img src="/ASSETS/okra.svg" alt="cucumber">
+                    </div>
+                    <div class="cucumber-text">
+                        <p class="cucumber-text1">Okra</p>
+                        <p class="cucumber-text2">N1000 per kg</p>
+                        <button class="add-button" id="add-cart">Add to cart</button>
+                    </div>
+                </div>
+                <div class="buy-text">You can also buy</div>
+                <div class="product-tomatoes">
+                    <div class="tomatoes-div">
+                        <p class="tomatoes-text-1">Cucumber</p>
+                        <p class="tomatoes-text-2">N200 per kg</p>
+                        <p class="tomatoes-text-2">Total Price</p>
+                        <p class="tomatoes-text-2">N1200</p>
+                    </div>
+                    <button class="tomatoes-buy" id="buy-both">Buy Both</button>
+                </div>
+            </div>
+            <div class="delivery">
+                <p class="delivery-text-1">Delivery and Returns</p>
+                <p class="delivery-text-1">Green Plug</p>
+                <p class="delivery-text-3">Our deliveries are very fast, <br> safe and reliable.</p>
+                <p class="delivery-text-3">Choose your location</p>
+                <select id="country" class="select">
+                    <option value="">Select a Country </option>
+                </select> <br>
+                <select id="Pickup" class="select">
+                    <option value="">Select a Location</option>
+                </select>
+                <p class="delivery-text-4">Pickup Station</p>
+                <p class="delivery-text-4">Delivery fee N1000</p>
+                <p class="delivery-text-4">Door Delivery</p>
+                <p class="delivery-text-4">Delivery fee N2500</p>
+                <button id="buy-now" class="buy-btn">Buy now</button>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section class="payment-policy">
+        <div class="policy">
+            <h2>Payment & Order Policy</h2>
+            <p>
+                All Payment must be made through approved channels. POD
+                is available only for verified customers. Bulk orders are subject
+                to availability, verification, and may require a commitment fee.
+                Prices and discounts may change without notice. Orders are
+                processed after payment confirmation or POD approval.
+                Delivery timelines vary, and customer must provide accurate
+                information. Cancellation are allowed after dispatch; eligible
+                refunds are processed within 7-14 working days. High-value or
+                suspicious orders may require verification or be declined.
+                Placing an order signifies acceptance of this policy.
+
+            </p>
+
+            <div class="confirmation-btn">
+                <button id="cancel-btn">Cancel</button>
+                <button id="continue-btn">Continue</button>
+            </div>
+        </div>
+
+    </section>
+    <script src="/POLICY PAGE/placeOrder-3.js" defer></script>
+</body>
+
+</html>

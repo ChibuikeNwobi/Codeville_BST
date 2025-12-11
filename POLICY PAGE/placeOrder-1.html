@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Policy 3</title>
-    <link rel="stylesheet" href="paymentPolicy-3.css">
+    <title>Place Order 1</title>
+    <link rel="stylesheet" href="/POLICY PAGE/placeOrder-3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,16 +23,16 @@
         <nav class="hero-nav">
             <ul class="nav-link">
                 <div>
-                    <li><a href="#">Home</a></li>
-                    <img src="/assets/arrow.svg" alt="arrow" class="arrow-icon">
+                    <li><a href="/LANDING PAGE/index.html">Home</a></li>
+                    <img src="/ASSETS/arrow.svg" alt="arrow" class="arrow-icon">
                 </div>
                 <div>
                     <li><a href="#">Products</a></li>
-                    <img src="/assets/arrow.svg" alt="arrow" class="arrow-icon">
+                    <img src="/ASSETS/arrow.svg" alt="arrow" class="arrow-icon">
                 </div>
                 <div>
                     <li><a href="#">Place Order</a></li>
-                    <img src="/assets/arrow.svg" alt="arrow" class="arrow-icon">
+                    <img src="/ASSETS/arrow.svg" alt="arrow" class="arrow-icon">
                 </div>
             </ul>
         </nav>
@@ -41,18 +41,14 @@
 
         <div class="search">
             <div class="logo">
-                <img src="/assets/logo.png" alt="logo">
+                <img src="/ASSETS/logo.png" alt="logo">
             </div>
 
-            <div class="search-bar">
-                <form class="search-bar--form">
-                    <div class="input-with-icon">
-                        <span><img src="/assets/search.svg" alt="search icon" class="search-icon"></span>
-                        <input type="Search" placeholder="Search Products" class="search-bar--input">
-                    </div>
-                </form>
-                <button type="submit" class="search-btn">Search</button>
+            <div class="search-container">
+                <img src="/ASSETS/search.svg" alt="search icon" class="search-icon">
+                <input type="Search" placeholder="Search Products">
             </div>
+            <button class="search-btn">Search</button>
         </div>
     </section>
 
@@ -63,23 +59,23 @@
             <div class="product-cucumber">
                 <div class="cucumber-div">
                     <div class="cucumber-image">
-                        <img src="/assets/cucumber.svg" alt="cucumber">
+                        <img src="/ASSETS/tomatoe.svg" alt="cucumber">
                     </div>
                     <div class="cucumber-text">
-                        <p class="cucumber-text1">Cucumber</p>
-                        <p class="cucumber-text2">N200 per one</p>
-                        <button class="add-button">Add to cart</button>
+                        <p class="cucumber-text1">Tomatoes</p>
+                        <p class="cucumber-text2">N150 per kg</p>
+                        <button class="add-button" id="add-cart">Add to cart</button>
                     </div>
                 </div>
                 <div class="buy-text">You can also buy</div>
                 <div class="product-tomatoes">
                     <div class="tomatoes-div">
-                        <p class="tomatoes-text-1">Tomatoes</p>
-                        <p class="tomatoes-text-2">N150 per kg</p>
+                        <p class="tomatoes-text-1">Okra</p>
+                        <p class="tomatoes-text-2">N1000 per basket</p>
                         <p class="tomatoes-text-2">Total Price</p>
-                        <p class="tomatoes-text-2">N350</p>
+                        <p class="tomatoes-text-2">N1150</p>
                     </div>
-                    <div class="tomatoes-btn"><button class="tomatoes-buy">Buy Both</button></div>
+                    <button class="tomatoes-buy" id="buy-both">Buy Both</button>
                 </div>
             </div>
             <div class="delivery">
@@ -87,18 +83,17 @@
                 <p class="delivery-text-1">Green Plug</p>
                 <p class="delivery-text-3">Our deliveries are very fast, <br> safe and reliable.</p>
                 <p class="delivery-text-3">Choose your location</p>
-                <select id="country">
+                <select id="country" class="select">
                     <option value="">Select a Country </option>
-                </select>
-                <label for="Pickup">Pickup Station </label> <br>
-                <select id="Pickup">
+                </select> <br>
+                <select id="Pickup" class="select">
                     <option value="">Select a Location</option>
                 </select>
                 <p class="delivery-text-4">Pickup Station</p>
                 <p class="delivery-text-4">Delivery fee N1000</p>
                 <p class="delivery-text-4">Door Delivery</p>
                 <p class="delivery-text-4">Delivery fee N2500</p>
-                <button class="buy-now" onclick="buy()">Buy now</button>
+                <button id="buy-now" class="buy-btn">Buy now</button>
             </div>
         </div>
 
@@ -106,7 +101,7 @@
     </section>
 
     <section class="payment-policy">
-        <div class="policy" id="buy">
+        <div class="policy">
             <h2>Payment & Order Policy</h2>
             <p>
                 All Payment must be made through approved channels. POD
@@ -123,13 +118,13 @@
             </p>
 
             <div class="confirmation-btn">
-                <button id="cancel-btn" onclick="cancel()">Cancel</button>
+                <button id="cancel-btn">Cancel</button>
                 <button id="continue-btn">Continue</button>
             </div>
         </div>
 
     </section>
-    <script src="paymentPolicy-3.js" defer></script>
+    <script src="/POLICY PAGE/placeOrder-3.js" defer></script>
 </body>
 
 </html>

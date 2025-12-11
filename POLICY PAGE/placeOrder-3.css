@@ -1,0 +1,392 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    padding: 2rem;
+    width: fit-content;
+}
+
+html,
+body {
+    height: 100%;
+    margin: auto;
+}
+
+/* Responsive Behaviour */
+/* Tablet View  */
+@media (max-width: 1200px) {
+    .layout{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cucumber-div {
+        order: 1;
+    }
+    
+    .product-tomatoes {
+        order: 2;
+    }
+
+    .delivery {
+        order: 3;
+    }
+}
+
+/* Desktop View */
+@media (max-width: 1200px) {}
+
+.hero-nav {
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.nav-link div {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'poppins', 'sans-serif';
+}
+
+.arrow-icon img {
+    font-size: 50px;
+}
+
+/* search bar and logo */
+
+.search {
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 2px;
+    border-radius: 3px;
+    width: 50%;
+    height: 54px;
+    color: #FFFFFF;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.search-container:hover {
+    background-color: #F5F5F5;
+}
+
+.search-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.search-container img {
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 20px;
+    color: #000000;
+}
+
+input::placeholder {
+    color: #000000;
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.search-btn {
+    background: #3B7A3A;
+    color: #fff;
+    border: 2px;
+    padding: 10px 55px;
+    height: 54px;
+    border-radius: 5px;
+    margin-left: 3px;
+}
+
+
+.search-btn:hover {
+    background-color: #2e5d2e;
+    transition: 0.3s;
+}
+
+/* body layout */
+
+.layout {
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}
+
+.products-list {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+.cucumber-div {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    max-width: 500px;
+    height: 300px;
+}
+
+.cucumber-div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cucumber-image img {
+    width: 15em;
+    height: 15em;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.cucumber-text1 {
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 38px;
+    padding-bottom: 10px;
+    height: 75px;
+    width: 330px;
+}
+
+.cucumber-text2 {
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.add-button {
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    color: #fff;
+    background-color: #3B7A3A;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.add-button:hover {
+    background-color: #2e5d2e;
+    transition: 0.3s;
+}
+
+.buy-text {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.product-tomatoes {
+    background-color: #FFFFFF;
+    padding: 20px;
+    line-height: normal;
+    border-radius: 5px;
+}
+
+.product-tomatoes:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tomatoes-text-1 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.tomatoes-text-2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    line-height: normal;
+    padding-top: 10px;
+
+}
+
+.tomatoes-btn {
+    display: flex;
+    justify-content: flex-end;
+    /* padding-left: 40% ; */
+}
+
+.tomatoes-buy {
+    color: #fff;
+    background: #3B7A3A;
+    width: 30%;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.tomatoes-buy:hover {
+    background-color: #2e5d2e;
+    transition: 0.3s;
+}
+
+.delivery {
+    background-color: #FFFFFF;
+    padding: 30px;
+    line-height: normal;
+    border-radius: 5px;
+    border: 2px;
+    height: 35rem;
+}
+
+.delivery:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.delivery-text-1 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    padding: 10px;
+
+}
+
+.delivery-text-3 {
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    padding: 10px;
+}
+
+.delivery-text-4 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: normal;
+    line-height: 24px;
+    letter-spacing: 0%;
+    padding-top: 10px;
+}
+
+.select {
+    background-color: #D5D5D5;
+    border: 2px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.select:hover {
+    background-color: #C0C0C0;
+    transition: 0.3s;
+}
+
+/* removing default style from the javascript array of countries select btn */
+
+.select2-container .select2-selection--single {
+    height: 45px !important;
+    border: 2px !important;
+    border-radius: 5px !important;
+    padding: 10px 25px !important;
+    font-size: 16px !important;
+    font-family: "Poppins", sans-serif !important;
+    background-color: #D5D5D5 !important;
+}
+
+.select2-dropdown {
+    border: 2px !important;
+}
+
+.select2-results__option--highlighted {
+    background: #D5D5D5 !important;
+}
+
+
+
+.buy-btn {
+    color: #fff;
+    background-color: #3B7A3A;
+    width: 50%;
+    padding: 10px 25px;
+    margin-top: 10px;
+}
+
+.buy-btn:hover {
+    background-color: #2e5d2e;
+    transition: 0.3s;
+}
+
+.payment-policy {
+    background-color: #fff;
+}
+
+.policy {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0;
+    transition: opacity .5s, visibility .5s;
+}
+
+.policy.show {
+    visibility: visible;
+    opacity: 1;
+}
