@@ -40,6 +40,7 @@ $("#country").select2({
     allowClear: true
 });
 
+
 /** Add to Cart  */
 const popup = document.getElementById("add-cart").addEventListener("click", () => {
     alert("Added To Cart Succesfully")
@@ -47,15 +48,15 @@ const popup = document.getElementById("add-cart").addEventListener("click", () =
 
 // payment policy popup
 
-const policy = document.getElementsByClassName('policy')
-document.getElementById('btn').addEventListener('click', () => {
-
+document.getElementById("buy-now", "buy-both").addEventListener("click", () => {
+    let buy = document.getElementsByClassName("policy")
+    buy.classList.add("show")
 })
 
-function buy(){
-    document.getElementById("buy").style.display ="block"
-}
+document.getElementsById("cancel-btn").addEventListener("click", () => {
+    let cancel = document.getElementById("buy").style.display = "none"
+})
 
-function cancel(){
-    document.getElementById("buy").style.display ="none"
+function cancel() {
+    document.getElementById("buy").style.display = "none"
 }
