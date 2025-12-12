@@ -8,14 +8,8 @@ body {
     background-color: #eee;
     font-family: "Poppins", sans-serif;
     padding: 2rem;
-    width: fit-content;
 }
 
-html,
-body {
-    height: 100%;
-    margin: auto;
-}
 
 /* Responsive Behaviour */
 /* Tablet View  */
@@ -365,7 +359,7 @@ input::placeholder {
 
 .buy-btn:hover {
     background-color: #2e5d2e;
-    transition: 0.3s;
+    transition: 0.3s ;
 }
 
 .payment-policy {
@@ -383,7 +377,6 @@ input::placeholder {
     bottom: 30px;
     right: 30px;
     opacity: 0;
-    transition: opacity .5s, visibility .5s;
 }
 
 .policy.show {

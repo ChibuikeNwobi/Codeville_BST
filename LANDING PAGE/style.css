@@ -208,6 +208,14 @@ p {
     margin-bottom: 12px;
 }
 
+.footer {
+    padding: 100px;
+    background-color: #121212;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .cards {
