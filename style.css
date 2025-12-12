@@ -6,7 +6,7 @@
   font-family: "Inter", sans-serif;
 }
 body {
-  background: url("green-house\ image.jpg");
+  background: url(./ICONS/green-house\ image.jpg);
   background-size: cover;
   background-position: top;
   height: 500px;
