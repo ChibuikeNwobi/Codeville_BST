@@ -15,25 +15,49 @@
 
 <body>
     <div class="container">
-        <div class="header">Home > Products ></div>
+        <section>
+            <!-- Nav bar -->
+            <nav class="hero-nav">
+                <ul class="nav-link">
+                    <div>
+                        <li><a href="/LANDING PAGE/index.html">Home</a></li>
+                        <img src="/ASSETS/arrow.svg" alt="arrow" class="arrow-icon">
+                    </div>
+                    <div>
+                        <li><a href="#">Products</a></li>
+                        <img src="/ASSETS/arrow.svg" alt="arrow" class="arrow-icon">
+                    </div>
+                    <div>
+                        <li><a href="#">Place Order</a></li>
+                        <img src="/ASSETS/arrow.svg" alt="arrow" class="arrow-icon">
+                    </div>
+                </ul>
+            </nav>
 
-        <!-- Header Row -->
-        <div class="header-row">
-            <h2 class="brand"><img src="/ASSETS/logo.png" /></h2>
+            <!-- Search bar and logo -->
 
-            <div class="search-box">
-                <img src="/ASSETS/search.svg" />
-                <input type="text" placeholder="Search products" />
-                <button>Search</button>
+            <div class="search">
+                <div class="logo">
+                    <img src="/ASSETS/logo.png" alt="logo">
+                </div>
+
+                <div class="search-container">
+                    <img src="/ASSETS/search.svg" alt="search icon" class="search-icon">
+                    <input type="Search" placeholder="Search Products">
+                </div>
+                <button class="search-btn">Search</button>
             </div>
-        </div>
+        </section>
 
         <!-- Product Cards -->
         <div class="product-grid">
             <!-- Card 1 -->
             <div class="product-card">
                 <img src="/ASSETS/tomatoe.svg" alt="Tomatoes" />
-                <h3>Tomatoes</h3>
+                <a href="/POLICY PAGE/placeOrder-1.html" class="product-link">
+                    <h3>Tomatoes</h3>
+
+                </a>
                 <p class="price">₦150 per kg</p>
                 <p class="desc">
                     Fresh juicy tomatoes for cooking. Grown with organic manure.
@@ -50,7 +74,9 @@
             <!-- Card 2 -->
             <div class="product-card">
                 <img src="/ASSETS/cucumber.svg" alt="Cucumber" />
-                <h3>Cucumber</h3>
+                <a href="/POLICY PAGE/placeOrder-3.html" class="product-link">
+                    <h3>Cucumber</h3>
+                </a>
                 <p class="price">₦200 per one</p>
                 <p class="desc">
                     Nutrient-rich cucumber. Low-calorie, hydrating, packed with
@@ -68,7 +94,9 @@
             <!-- Card 3 -->
             <div class="product-card">
                 <img src="/ASSETS/okra.svg" alt="Okra" />
-                <h3>Okra</h3>
+                <a href="/POLICY PAGE/placeOrder-2.html" class="product-link">
+                    <h3>Okra</h3>
+                </a>
                 <p class="price">₦1,000 per kg</p>
                 <p class="desc">Grown with care and harvested at peak freshness.</p>
 
