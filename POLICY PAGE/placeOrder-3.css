@@ -5,35 +5,11 @@
 }
 
 body {
-    background-color: #eee;
+    background: #c6c4c4;
     font-family: "Poppins", sans-serif;
     padding: 2rem;
 }
 
-
-/* Responsive Behaviour */
-/* Tablet View  */
-@media (max-width: 1200px) {
-    .layout{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cucumber-div {
-        order: 1;
-    }
-    
-    .product-tomatoes {
-        order: 2;
-    }
-
-    .delivery {
-        order: 3;
-    }
-}
-
-/* Desktop View */
-@media (max-width: 1200px) {}
 
 .hero-nav {
     width: 50%;
@@ -359,8 +335,13 @@ input::placeholder {
 
 .buy-btn:hover {
     background-color: #2e5d2e;
-    transition: 0.3s ;
+    transition: 0.3s;
 }
+
+/* Responsive Behaviour */
+ @media (min-width: 768px) {
+
+ }
 
 .payment-policy {
     background-color: #fff;
