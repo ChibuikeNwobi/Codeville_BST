@@ -40,23 +40,21 @@ $("#country").select2({
     allowClear: true
 });
 
-
 /** Add to Cart  */
 const popup = document.getElementById("add-cart").addEventListener("click", () => {
-    alert("Added To Cart Succesfully")
+    alert("Added To Cart Succesfully");
 });
 
 // payment policy popup
 
-document.getElementById("buy-now", "buy-both").addEventListener("click", () => {
-    let buy = document.getElementsByClassName("policy")
-    buy.classList.add("show")
-})
+document.querySelectorAll("#buy-now, #buy-both").forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.querySelectorAll(".policy").forEach(policy => {
+            policy.classList.add("show");
+        });
+    });
+});
 
-document.getElementsById("cancel-btn").addEventListener("click", () => {
-    let cancel = document.getElementById("buy").style.display = "none"
-})
-
-function cancel() {
-    document.getElementById("buy").style.display = "none"
-}
+document.getElementById("cancel-btn").addEventListener("click", () => {
+    document.querySelector(".policy").classList.remove("show")
+});
