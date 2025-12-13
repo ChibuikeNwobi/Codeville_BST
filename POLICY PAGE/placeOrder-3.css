@@ -352,6 +352,13 @@ input::placeholder {
     margin-top: 10px;
 }
 
+#cancel-btn {
+    background: #E4E3E3;
+    color: #000;
+    border: 2px;
+    
+}
+
 .payment-policy {
     background-color: #fff;
     width: 400px;
