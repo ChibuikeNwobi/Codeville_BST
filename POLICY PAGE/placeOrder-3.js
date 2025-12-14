@@ -58,3 +58,8 @@ document.querySelectorAll("#buy-now, #buy-both").forEach(btn => {
 document.getElementById("cancel-btn").addEventListener("click", () => {
     document.querySelector(".policy").classList.remove("show")
 });
+
+document.getElementById("continue-btn").addEventListener("click", () => {
+    alert("Order Placed Successfully!");
+    document.querySelector(".policy").classList.remove("show")
+})

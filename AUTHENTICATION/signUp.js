@@ -10,3 +10,7 @@ document.getElementById("signupForm").addEventListener("submit", (e) => {
     e.preventDefault();
     alert("Account Created Successfully!");
 });
+
+document.getElementById("submitBtn".addEventListener("click", () => {
+    alert("Account Created Successfully!");
+}))
